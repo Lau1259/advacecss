@@ -1,0 +1,82 @@
+.page-wrapper {
+  color: $white;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  @include MQ(S) {
+    text-align: left;
+    padding: 1em 2em;
+  }
+
+  @include MQ(M) {
+    text-align: center;
+  }
+
+  h1 {
+    @include MQ(S) {
+      font-size: 1.75em;
+    }
+
+    @include MQ(M) {
+      font-size: 3em;
+    }
+  }
+
+  h2 {
+    color: $magenta-dark;
+
+    @include MQ(S) {
+      font-size: .5em;
+    }
+
+    @include MQ(M) {
+      font-size: .75em;
+      //The margins adjust the position of the h2
+      margin-right: 20vw;
+      margin-top: -10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+a{
+  color: $black;
+  text-decoration: none;
+}
+
+.summary p:last-child{
+  color: $black;
+  font-weight: 800;
+  font-size: .8em;
+}
+
+aside{
+  color: $black;
+  font-weight: 800;
+  font-size: .8em;
+  ul{
+    list-style-type: none;
+  }
+
+}
+
+// This controls the section titles
+.explanation h3, .benefits h3{
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  margin: 0;
+  padding: 0 2em;
+}
+
+header,
+footer {
+  margin: 0 -2em;
+}
+
+// This adds the download links to the top.
+// I did it this way because we hadn't noticed this
+// wasn't part of the sidebar in the HTML when we
+// made the wireframes
+.summary p:last-child {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  padding: 2em;
+  padding-left: 1em;
+  padding-bottom: 0;
+  width: 30vw;
+  z-index: 10;
+}
+
+// Hides aside and Downloads
+// .summary p:last-child,
+// aside {
+//   display: none;
+// }
+
+aside {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  padding: 2em;
+  padding-left: 1em;
+  width: 30vw;
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    padding: .5em 0;
+  }
+
+  li a:first-child {
+    display: block;
+  }
+}

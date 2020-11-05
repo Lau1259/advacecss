@@ -1,0 +1,13 @@
+// This covers any colors besides font which belongs to typography
+#css-zen-garden {
+  background-color: $magenta-dark;
+}
+
+header,
+footer{
+  background-color: $green;
+}
+.summary p:last-child,
+aside{
+  background-color: $green;
+}

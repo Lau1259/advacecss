@@ -1,0 +1,13 @@
+// Media Queries
+
+@mixin MQ($size) {
+  @if $size == S {
+   @media only screen and (max-width: $S) { @content; }
+  }
+  @else if $size == M {
+   @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $size == L {
+   @media only screen and (min-width: $L) { @content; }
+  }
+}
