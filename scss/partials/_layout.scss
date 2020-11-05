@@ -56,3 +56,8 @@ aside {
     display: block;
   }
 }
+
+h3,
+.requirements p:nth-child(5){
+  border-bottom: .25em solid $green;
+}
