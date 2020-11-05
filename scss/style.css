@@ -1,4 +1,4 @@
-#css-zen-garden {
+.page-wrapper {
   background-color: #8d1c45;
 }
 
@@ -10,6 +10,15 @@ footer {
 .summary p:last-child,
 aside {
   background-color: #62bf04;
+}
+
+.select,
+.archives,
+.resources {
+  background-color: #a65376;
+  margin-left: -0.5em;
+  color: #ffffff;
+  font-size: 1em;
 }
 
 .page-wrapper {
@@ -101,10 +110,6 @@ aside ul {
   margin: 0 auto;
 }
 
-.requirements {
-  padding-bottom: 1em;
-}
-
 footer {
   text-align: center;
 }
@@ -133,7 +138,7 @@ footer {
   padding-left: 1em;
   padding-bottom: 0;
   width: 30vw;
-  z-index: 10;
+  min-width: 150px;
 }
 
 aside {
@@ -143,9 +148,10 @@ aside {
   padding: 2em;
   padding-left: 1em;
   width: 30vw;
+  min-width: 150px;
 }
 aside ul {
-  padding: 0;
+  padding: 0.75em;
 }
 aside li {
   display: block;
@@ -155,9 +161,19 @@ aside li a:first-child {
   display: block;
 }
 
-h3,
+[role=article] h3,
 .requirements p:nth-child(5) {
   border-bottom: 0.25em solid #62bf04;
+}
+
+.requirements {
+  padding-bottom: 1em;
+}
+
+.select,
+.archives,
+.resources {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

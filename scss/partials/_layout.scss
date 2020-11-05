@@ -26,7 +26,7 @@ footer {
   padding-left: 1em;
   padding-bottom: 0;
   width: 30vw;
-  z-index: 10;
+  min-width: 150px;
 }
 
 // Hides aside and Downloads
@@ -42,9 +42,10 @@ aside {
   padding: 2em;
   padding-left: 1em;
   width: 30vw;
+  min-width: 150px;
 
   ul {
-    padding: 0;
+    padding: .75em;
   }
 
   li {
@@ -57,7 +58,17 @@ aside {
   }
 }
 
-h3,
+[role="article"] h3,
 .requirements p:nth-child(5){
   border-bottom: .25em solid $green;
+}
+
+.requirements{
+  padding-bottom: 1em;
+}
+
+.select ,
+.archives,
+.resources{
+  margin-bottom: 0;
 }

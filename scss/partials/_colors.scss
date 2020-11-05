@@ -1,5 +1,5 @@
 // This covers any colors besides font which belongs to typography
-#css-zen-garden {
+.page-wrapper {
   background-color: $magenta-dark;
 }
 
@@ -10,4 +10,13 @@ footer{
 .summary p:last-child,
 aside{
   background-color: $green;
+}
+
+.select ,
+.archives,
+.resources{
+  background-color: $magenta-light;
+  margin-left: -.5em;
+  color: $white;
+  font-size: 1em;
 }
