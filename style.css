@@ -284,6 +284,7 @@ h3.archives::before,
 h3.resources::before {
   content: url(svg/arrow.svg);
   padding-right: 0.5em;
+  margin-left: 1em;
 }
 
 a {
