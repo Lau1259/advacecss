@@ -170,6 +170,10 @@ header {
   padding: 0 2em;
 }
 
+.page-wrapper p[role="contentinfo"] {
+  font-size: .75em;
+}
+
 @media only screen and (min-width: 52em) {
   .page-wrapper {
     max-width: 70vw;
@@ -179,9 +183,6 @@ header {
   }
   .page-wrapper p {
     font-size: 1.5em;
-  }
-  .page-wrapper p[role="contentinfo"] {
-    font-size: 1em;
   }
 }
 
@@ -198,11 +199,6 @@ header {
   top: 0;
   width: 70vw;
   height: 10vh;
-}
-
-.sidebar a {
-  background-color: #ffffff;
-  color: #000000;
 }
 
 .sidebar::after {
@@ -227,6 +223,7 @@ header {
     position: absolute;
     left: 0;
     top: 0;
+    pointer-events: none;
   }
   .sidebar::after {
     display: none;
@@ -290,7 +287,6 @@ h3.resources::before {
 }
 
 a {
-  background-color: black;
-  color: #62bf04;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
