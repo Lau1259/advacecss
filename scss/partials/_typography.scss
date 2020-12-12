@@ -25,17 +25,20 @@ header {
   }
 
   h1 {
+    font-size: 1.75em;
     @include MQ(S) {
       font-size: 1.75em;
     }
 
     @include MQ(M) {
-      font-size: 3em;
+      font-size: 2em;
+      margin-right: 30%;
     }
   }
 
   h2 {
     color: $magenta-dark;
+    font-size: .5em;
 
     @include MQ(S) {
       font-size: .5em;
@@ -44,8 +47,8 @@ header {
     @include MQ(M) {
       font-size: .75em;
       //The margins adjust the position of the h2
-      margin-right: 20vw;
-      margin-top: -10px;
+      margin-right: 35%;
+      margin-top: -5px;
       padding-bottom: 10px;
     }
   }
