@@ -223,7 +223,6 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    pointer-events: none;
   }
   .sidebar::after {
     display: none;
@@ -257,10 +256,22 @@ header {
   text-align: center;
 }
 
+@media only screen and (min-width: 52em) {
+  .sidebar:hover {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sidebar:hover::after {
+    display: none;
+  }
+}
+
 .wrapper {
   margin-top: 10vh;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   left: -50vw;
 }

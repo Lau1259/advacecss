@@ -107,15 +107,22 @@ header {
     text-align: center;
   }
 
-  @include MQ(M){
-    pointer-events: none;
+  @include MQ(M) {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 .wrapper {
   margin-top: 10vh;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   left: -50vw;
 
